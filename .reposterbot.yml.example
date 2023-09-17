@@ -1,0 +1,10 @@
+bot_token: 1234567800:AAddkks7sD-AkdvkYekds9doPgLV3nIzsLk 
+retry_delay: 5 # seconds count between copy message retry
+channels:
+  - id: -1001234567890  
+    posts: # range of posts for random selection
+      from: 10
+      to: 13
+    delay: # random delay range between posts in minutes
+      from: 35
+      to: 95

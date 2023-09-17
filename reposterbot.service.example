@@ -1,0 +1,14 @@
+[Unit]
+Description=ReposterBot reposts old post in channels
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/reposterbot -p=/var/www/.reposterbot.yml
+Restart=always
+User=www-data
+Group=www-data
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
